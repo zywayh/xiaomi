@@ -59,16 +59,6 @@ class AiController {
                 session:[
                         attributes:"attributes"
                 ],
-//                session_attributes:[
-//                        [
-//                                msg:[
-//                                        [test:"test"]
-//                                ],
-//                                args:[
-//                                        [test:"test"]
-//                                ]
-//                        ]
-//                ],     //持久化的内容可以放这
                 is_session_end:false,
                 response:[
                         open_mic:true,         //指示客户端是否需要关闭mic, true，打开麦克风；false，关闭麦克风
