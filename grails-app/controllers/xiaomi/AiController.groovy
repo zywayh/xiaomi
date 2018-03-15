@@ -53,12 +53,18 @@ class AiController {
 
         } catch(Exception e) {}
 
+
         def root = [
                 version:"1.0",
                 session:[
                         attributes:"attributes"
                 ],
-                session_attributes:[],     //持久化的内容可以放这
+                session_attributes:[
+                        [
+                                msg:[],
+                                args:[]
+                        ]
+                ],     //持久化的内容可以放这
                 is_session_end:false,
                 response:[
                         open_mic:true,         //指示客户端是否需要关闭mic, true，打开麦克风；false，关闭麦克风
