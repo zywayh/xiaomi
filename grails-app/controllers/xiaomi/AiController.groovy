@@ -61,8 +61,12 @@ class AiController {
                 ],
                 session_attributes:[
                         [
-                                msg:[],
-                                args:[]
+                                msg:[
+                                        [test:"test"]
+                                ],
+                                args:[
+                                        [test:"test"]
+                                ]
                         ]
                 ],     //持久化的内容可以放这
                 is_session_end:false,
