@@ -30,7 +30,7 @@ class AiController {
                                         type:"audio",          // audio, tts
                                         audio_item:[
                                                 stream:[
-                                                        url:"http://xxxxx.mp3",
+                                                        url:"http://zyw-video.oss-cn-beijing.aliyuncs.com/6-3%E5%BE%90%E9%9D%99%E8%95%BE.mp3",
                                                         offset_in_milliseconds:0
                                                 ]
                                         ]
@@ -39,7 +39,7 @@ class AiController {
                                         type:"tts",          // audio, tts
                                         tts_item:[
                                                 "type": "text",
-                                                text:"http://xxxxx.mp3"
+                                                text:"海浪的声音"
                                         ]
                                 ]
                         ],
