@@ -93,39 +93,4 @@ class AiController {
 
 //        respond root
     }
-
-
-    private static JsonSlurper jsonSlurper = new JsonSlurper()
-    private static JsonSlurper getJsonSlurper(){
-        if(!jsonSlurper)
-            jsonSlurper = new JsonSlurper()
-        return jsonSlurper
-    }
-
-    /**
-     * json字符串转json对象
-     * @param strJson
-     * @return
-     */
-    static def strJsonToJson(String strJson){
-        return getJsonSlurper().parseText(strJson)
-    }
-
-    /**
-     * 对象转json对象
-     * @param obj
-     * @return
-     */
-    static def objToJson(def obj){
-        return new JsonBuilder(obj)
-    }
-
-    /**
-     * 对象转json字符串
-     * @param obj
-     * @return
-     */
-    static def objToJsonStr(def obj){
-        return objToJson(obj).toString()
-    }
 }
