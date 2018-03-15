@@ -1,11 +1,10 @@
 package xiaomi
 
 import groovy.json.JsonBuilder
-import groovy.json.JsonSlurper
 
 class AiController {
 
-    static responseFormats = ['json']
+//    static responseFormats = ['json']
 
     def index() {
 
@@ -89,7 +88,8 @@ class AiController {
                 ]
         ]
 
-        response.outputStream.write(new JsonBuilder(root).toString().getBytes("utf-8"))
+        response.outputStream << new JsonBuilder(root).toString().getBytes("utf-8")
+//        response.outputStream.write(new JsonBuilder(root).toString().getBytes("utf-8"))
 
 //        respond root
     }
